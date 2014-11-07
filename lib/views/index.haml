@@ -1,5 +1,12 @@
-%h1 Hello world
+%html
+  %head
+    %meta{charset:'utf-8'}
+    %link{rel:'stylesheet', href:'/stylesheet/application.css'}
+  %body
+    %h1
+      Hello world,
+      = name
 
-%form{method:'post', action:'/change'}
-  %input{name:'name'}
-  %input{type:'submit',value:'Change Name'}
+    %form{method:'post', action:'/change'}
+      %input{name:'name'}
+      %input{type:'submit',value:'Change Name'}
