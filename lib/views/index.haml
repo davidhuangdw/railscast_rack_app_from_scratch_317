@@ -4,8 +4,7 @@
     %link{rel:'stylesheet', href:'/stylesheet/application.css'}
   %body
     %h1
-      Hello world,
-      = name
+      Hello #{name}!
 
     %form{method:'post', action:'/change'}
       %input{name:'name'}

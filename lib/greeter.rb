@@ -27,7 +27,7 @@ class Greeter
     Rack::Response.new(*args, &blk)
   end
   def name
-    request.cookies["greet"] || "Guest"
+    request.cookies["greet"] || "World"
   end
 end
 
